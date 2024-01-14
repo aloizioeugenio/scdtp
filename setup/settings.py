@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tela_login',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
