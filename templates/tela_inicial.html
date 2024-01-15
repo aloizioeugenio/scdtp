@@ -1,0 +1,70 @@
+{% load static %} {% load django_bootstrap5 %}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% bootstrap_css %} {% bootstrap_javascript %} {% bootstrap_messages %}
+
+    <title>Login SCDTP</title>
+  </head>
+  <body>
+    <div class="container-fluid p-2 bg-primary text-white">
+        <h1 class="display-6">SCDTP</h1>
+    </div>
+    <div class="container-fluid p-2 bg-secondary text-white">
+        <p class="display-6">Sistema de Controle de Contrato INSS/DATAPREV</p>
+    </div>
+    <div class="container text-center display-6 text-muted">
+      <div class="row mt-5">
+        <div class="col">
+          <img
+            src="{% static 'images/users.png' %}"
+            class="w-50 mb-2"
+            alt="Usuários"
+          />
+          <p class="text-center">Usuários</p>
+        </div>
+        <div class="col">
+          <img
+            src="{% static 'images/contract.png' %}"
+            class="w-50 mb-2"
+            alt="Usuários"
+          />
+          <p class="text-center">Contratos</p>
+        </div>
+        <div class="col">
+          <img
+            src="{% static 'images/tipos_usuario.png' %}"
+            class="w-50 mb-2"
+            alt="Usuários"
+          />
+          <p class="text-center">Tipo de Usuário</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <img
+            src="{% static 'images/servicos.png' %}"
+            class="w-50 mb-2"
+            alt="Usuários"
+          />
+          <p class="text-center">Serviços</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="{% static 'images/equipe_fiscalizacao.png' %}"
+            class="w-50 mb-2"
+            alt="Usuários"
+          />
+          <p class="text-center">Equipe de Fiscalização</p>
+        </div>
+        <div class="col-2"</p>
+      </div>
+    </div>
+  </body>
+</html>
