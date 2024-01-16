@@ -21,20 +21,24 @@
     <div class="container text-center display-6 text-muted">
       <div class="row mt-5">
         <div class="col">
-          <img
-            src="{% static 'images/users.png' %}"
-            class="w-50 mb-2"
-            alt="Usuários"
+           
+          <img 
+          src="{% static 'images/users.png' %}"
+          class="w-50 mb-2"
+          alt="Usuários"
           />
+          
           <p class="text-center">Usuários</p>
         </div>
         <div class="col">
-          <img
+          <a href="{% url 'abre_tela_contratos' %}">
+            <img
             src="{% static 'images/contract.png' %}"
             class="w-50 mb-2"
             alt="Usuários"
-          />
-          <p class="text-center">Contratos</p>
+            />
+          </a>
+            <p class="text-center">Contratos</p>
         </div>
         <div class="col">
           <img
@@ -63,7 +67,7 @@
           />
           <p class="text-center">Equipe de Fiscalização</p>
         </div>
-        <div class="col-2"</p>
+        <div class="col-2">
       </div>
     </div>
   </body>

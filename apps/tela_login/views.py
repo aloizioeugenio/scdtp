@@ -6,3 +6,7 @@ def funcao_login(request):
 def funcao_tela_inicial(request):
     if request.method == 'GET':
         return render(request, 'tela_inicial.html')
+
+def funcao_tela_contratos(request):
+    if request.method == 'GET':
+        return render(request, 'tela_contratos.html')
